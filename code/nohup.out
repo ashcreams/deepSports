@@ -1,0 +1,1308 @@
+2021-06-03 10:06:57.035821: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 10:06:57.035970: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 10:06:57.035979: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Job "exec_cron (trigger: cron[hour='10', minute='10'], next run at: 2021-06-04 10:10:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 15, in exec_cron
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 1273, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 170, in dayResultCrawling
+    browser.get(player_line_up_URL)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=89.0.4389.72)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 17, in exec_cron
+    exists_result, exists_preview = runCrawler(today)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 1273, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 170, in dayResultCrawling
+    browser.get(player_line_up_URL)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=89.0.4389.72)
+
+Job "exec_cron (trigger: cron[hour='10', minute='15'], next run at: 2021-06-04 10:15:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 15, in exec_cron
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 1273, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 170, in dayResultCrawling
+    browser.get(player_line_up_URL)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=89.0.4389.72)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 17, in exec_cron
+    exists_result, exists_preview = runCrawler(today)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 1273, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 170, in dayResultCrawling
+    browser.get(player_line_up_URL)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=89.0.4389.72)
+
+2021-06-03 10:22:27.503305: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 10:22:27.503424: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 10:22:27.503433: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-03 10:25:38.661901: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-03 10:25:38.696143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-03 10:25:38.696927: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-03 10:25:38.697199: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-03 10:25:38.697351: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 10:25:38.699138: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-03 10:25:38.699485: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-03 10:25:38.701280: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-03 10:25:38.702736: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-03 10:25:38.708023: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-03 10:25:38.708057: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-03 10:25:38.708453: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-03 10:25:38.730151: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-03 10:25:38.733787: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f0f88206a90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-03 10:25:38.733843: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-03 10:25:39.051718: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f0f88249f30 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-03 10:25:39.051811: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-03 10:25:39.051835: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-03 10:25:39.052279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-03 10:25:39.052320: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+2021-06-03 10:30:55.809803: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 10:30:55.809915: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 10:30:55.809925: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-03 10:40:26.064349: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-03 10:40:26.098731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-03 10:40:26.099507: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-03 10:40:26.099742: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-03 10:40:26.099885: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 10:40:26.101688: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-03 10:40:26.102018: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-03 10:40:26.103799: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-03 10:40:26.104983: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-03 10:40:26.109447: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-03 10:40:26.109474: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-03 10:40:26.110141: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-03 10:40:26.126329: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-03 10:40:26.131492: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f56141fd0e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-03 10:40:26.131567: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-03 10:40:26.396995: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f561413a8d0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-03 10:40:26.397074: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-03 10:40:26.397097: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-03 10:40:26.397583: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-03 10:40:26.397623: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+2021-06-03 17:55:41.650018: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 17:55:41.650135: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 17:55:41.650144: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-03 23:50:27.833870: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-03 23:50:27.867370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-03 23:50:27.868325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-03 23:50:27.868647: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-03 23:50:27.868836: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-03 23:50:27.870846: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-03 23:50:27.871186: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-03 23:50:27.872969: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-03 23:50:27.874045: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-03 23:50:27.879264: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-03 23:50:27.879289: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-03 23:50:27.879744: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-03 23:50:27.905651: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-03 23:50:27.910995: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f64e4164190 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-03 23:50:27.911063: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-03 23:50:28.243977: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f64e41184c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-03 23:50:28.244064: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-03 23:50:28.244089: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-03 23:50:28.244944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-03 23:50:28.245060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+exec cron - kbo_app.py
+오늘 :  2021-06-03
+어제 :  2021-06-02
+2021 06 3
+2021 06 2
+검색일(프리뷰) :  2021-06-02
+입력일(프리뷰) :  2021-06-02
+KT LG
+
+SS SK
+
+OB NC
+
+LT WO
+
+HT HH
+
+검색일(프리뷰) :  2021-06-03
+입력일(프리뷰) :  2021-06-03
+KT LG
+SS SK
+OB NC
+LT WO
+HT HH
+프리뷰 완료
+KTLG 6
+올해 :  KTLG 5
+작년 :  KTLG 6
+SSSK 6
+올해 :  SSSK 5
+작년 :  SKSS 6
+OBNC 6
+올해 :  OBNC 5
+작년 :  OBNC 6
+LTWO 6
+올해 :  LTWO 5
+작년 :  LTWO 6
+HTHH 6
+올해 :  HTHH 5
+작년 :  HTHH 6
+{'날짜': '2021-06-03', '명칭': 'KTLG', '원정 팀': 'KT', '홈 팀': 'LG', '예측 승리팀': 'LG', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-03', '명칭': 'SSSK', '원정 팀': '삼성', '홈 팀': 'SSG', '예측 승리팀': 'SSG', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-03', '명칭': 'OBNC', '원정 팀': '두산', '홈 팀': 'NC', '예측 승리팀': '두산', '원정 팀 예측': '승 (예측)', '홈 팀 예측': '패 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-03', '명칭': 'LTWO', '원정 팀': '롯데', '홈 팀': '키움', '예측 승리팀': '롯데', '원정 팀 예측': '승 (예측)', '홈 팀 예측': '패 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-03', '명칭': 'HTHH', '원정 팀': 'KIA', '홈 팀': '한화', '예측 승리팀': '한화', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+exec cron - kbo_app.py
+오늘 :  2021-06-04
+어제 :  2021-06-03
+2021 06 4
+2021 06 3
+검색일(프리뷰) :  2021-06-03
+입력일(프리뷰) :  2021-06-03
+LT WO
+
+검색일(프리뷰) :  2021-06-04
+입력일(프리뷰) :  2021-06-04
+SK OB
+LT KT
+LG HT
+SS WO
+HH NC
+프리뷰 완료
+SKOB 6
+올해 :  OBSK 5
+작년 :  OBSK 6
+LTKT 6
+올해 :  KTLT 5
+작년 :  KTLT 6
+LGHT 7
+올해 :  LGHT 6
+작년 :  HTLG 7
+SSWO 5
+올해 :  WOSS 4
+작년 :  WOSS 5
+HHNC 7
+올해 :  NCHH 6
+작년 :  HHNC 7
+{'날짜': '2021-06-04', '명칭': 'SKOB', '원정 팀': 'SSG', '홈 팀': '두산', '예측 승리팀': '두산', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-04', '명칭': 'LTKT', '원정 팀': '롯데', '홈 팀': 'KT', '예측 승리팀': 'KT', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-04', '명칭': 'LGHT', '원정 팀': 'LG', '홈 팀': 'KIA', '예측 승리팀': 'KIA', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-04', '명칭': 'SSWO', '원정 팀': '삼성', '홈 팀': '키움', '예측 승리팀': '키움', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-04', '명칭': 'HHNC', '원정 팀': '한화', '홈 팀': 'NC', '예측 승리팀': 'NC', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+exec cron - kbo_app.py
+오늘 :  2021-06-04
+어제 :  2021-06-03
+2021 06 4
+2021 06 3
+검색일(프리뷰) :  2021-06-03
+입력일(프리뷰) :  2021-06-03
+LT WO
+
+검색일(프리뷰) :  2021-06-04
+입력일(프리뷰) :  2021-06-04
+SK OB
+LT KT
+LG HT
+SS WO
+HH NC
+프리뷰 완료
+SKOB 6
+올해 :  OBSK 5
+작년 :  OBSK 6
+LTKT 6
+올해 :  KTLT 5
+작년 :  KTLT 6
+LGHT 7
+올해 :  LGHT 6
+작년 :  HTLG 7
+SSWO 5
+올해 :  WOSS 4
+작년 :  WOSS 5
+HHNC 7
+올해 :  NCHH 6
+작년 :  HHNC 7
+{'날짜': '2021-06-04', '명칭': 'SKOB', '원정 팀': 'SSG', '홈 팀': '두산', '예측 승리팀': '두산', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-04', '명칭': 'LTKT', '원정 팀': '롯데', '홈 팀': 'KT', '예측 승리팀': 'KT', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-04', '명칭': 'LGHT', '원정 팀': 'LG', '홈 팀': 'KIA', '예측 승리팀': 'KIA', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-04', '명칭': 'SSWO', '원정 팀': '삼성', '홈 팀': '키움', '예측 승리팀': '키움', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-04', '명칭': 'HHNC', '원정 팀': '한화', '홈 팀': 'NC', '예측 승리팀': 'NC', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+exec cron - kbo_app.py
+오늘 :  2021-06-05
+어제 :  2021-06-04
+2021 06 5
+2021 06 4
+검색일(프리뷰) :  2021-06-04
+입력일(프리뷰) :  2021-06-04
+SK OB
+
+LT KT
+
+LG HT
+
+SS WO
+
+HH NC
+
+검색일(프리뷰) :  2021-06-05
+입력일(프리뷰) :  2021-06-05
+SK OB
+HH NC
+LT KT
+LG HT
+SS WO
+프리뷰 완료
+SKOB 7
+올해 :  SKOB 6
+작년 :  SKOB 7
+HHNC 8
+올해 :  HHNC 7
+작년 :  HHNC 8
+LTKT 7
+올해 :  LTKT 6
+작년 :  LTKT 7
+LGHT 8
+올해 :  LGHT 7
+작년 :  HTLG 8
+SSWO 6
+올해 :  SSWO 5
+작년 :  WOSS 6
+{'날짜': '2021-06-05', '명칭': 'SKOB', '원정 팀': 'SSG', '홈 팀': '두산', '예측 승리팀': '두산', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-05', '명칭': 'HHNC', '원정 팀': '한화', '홈 팀': 'NC', '예측 승리팀': 'NC', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-05', '명칭': 'LTKT', '원정 팀': '롯데', '홈 팀': 'KT', '예측 승리팀': 'KT', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-05', '명칭': 'LGHT', '원정 팀': 'LG', '홈 팀': 'KIA', '예측 승리팀': 'LG', '원정 팀 예측': '승 (예측)', '홈 팀 예측': '패 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-05', '명칭': 'SSWO', '원정 팀': '삼성', '홈 팀': '키움', '예측 승리팀': '삼성', '원정 팀 예측': '승 (예측)', '홈 팀 예측': '패 (예측)', '승리 확률': ''}
+exec cron - kbo_app.py
+오늘 :  2021-06-05
+어제 :  2021-06-04
+2021 06 5
+2021 06 4
+검색일(프리뷰) :  2021-06-04
+입력일(프리뷰) :  2021-06-04
+SK OB
+
+LT KT
+
+LG HT
+
+SS WO
+
+HH NC
+
+검색일(프리뷰) :  2021-06-05
+입력일(프리뷰) :  2021-06-05
+SK OB
+HH NC
+LT KT
+LG HT
+SS WO
+프리뷰 완료
+SKOB 7
+올해 :  SKOB 6
+작년 :  SKOB 7
+HHNC 8
+올해 :  HHNC 7
+작년 :  HHNC 8
+LTKT 7
+올해 :  LTKT 6
+작년 :  LTKT 7
+LGHT 8
+올해 :  LGHT 7
+작년 :  HTLG 8
+SSWO 6
+올해 :  SSWO 5
+작년 :  WOSS 6
+{'날짜': '2021-06-05', '명칭': 'SKOB', '원정 팀': 'SSG', '홈 팀': '두산', '예측 승리팀': '두산', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-05', '명칭': 'HHNC', '원정 팀': '한화', '홈 팀': 'NC', '예측 승리팀': 'NC', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-05', '명칭': 'LTKT', '원정 팀': '롯데', '홈 팀': 'KT', '예측 승리팀': 'KT', '원정 팀 예측': '패 (예측)', '홈 팀 예측': '승 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-05', '명칭': 'LGHT', '원정 팀': 'LG', '홈 팀': 'KIA', '예측 승리팀': 'LG', '원정 팀 예측': '승 (예측)', '홈 팀 예측': '패 (예측)', '승리 확률': ''}
+{'날짜': '2021-06-05', '명칭': 'SSWO', '원정 팀': '삼성', '홈 팀': '키움', '예측 승리팀': '삼성', '원정 팀 예측': '승 (예측)', '홈 팀 예측': '패 (예측)', '승리 확률': ''}
+exec cron - kbo_app.py
+오늘 :  2021-06-06
+어제 :  2021-06-05
+2021 06 6
+2021 06 5
+검색일(프리뷰) :  2021-06-05
+입력일(프리뷰) :  2021-06-05
+SK OB
+
+HH NC
+
+LT KT
+
+LG HT
+
+SS WO
+
+검색일(프리뷰) :  2021-06-06
+입력일(프리뷰) :  2021-06-06
+SK OB
+HH NC
+LT KT
+LG HT
+SS WO
+프리뷰 완료
+SKOB 8
+올해 :  SKOB 7
+작년 :  SKOB 8
+HHNC 9
+올해 :  HHNC 8
+작년 :  HHNC 9
+LTKT 8
+올해 :  LTKT 7
+작년 :  LTKT 8
+LGHT 9
+올해 :  LGHT 8
+작년 :  HTLG 9
+SSWO 7
+올해 :  SSWO 6
+작년 :  SSWO 7
+{'날짜': '2021-06-06', '명칭': 'SKOB', '원정 팀': 'SSG', '홈 팀': '두산', '예측 승리팀': 'SSG', '원정 팀 예측': '승 (예측)', '홈 팀 예측': '패 (예측)', '승리 확률': ''}PUT http://192.168.0.14:9222/day_result/_doc/20210605SKOB0 [status:429 request:0.002s]
+PUT http://192.168.0.14:9222/day_result/_doc/20210605SKOB0 [status:429 request:0.002s]
+Job "exec_cron (trigger: cron[hour='23', minute='50'], next run at: 2021-06-07 23:50:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 15, in exec_cron
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 1277, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 398, in dayResultCrawling
+    response = es_client.index(index='day_result', doc_type='_doc', id=game_str, body=baseball_dict)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 319, in index
+    _make_path(index, doc_type, id), params=params, body=body)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 186, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/connection/base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+elasticsearch.exceptions.TransportError: TransportError(429, 'cluster_block_exception', 'index [day_result] blocked by: [TOO_MANY_REQUESTS/12/index read-only / allow delete (api)];')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 17, in exec_cron
+    exists_result, exists_preview = runCrawler(today)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 1277, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 398, in dayResultCrawling
+    response = es_client.index(index='day_result', doc_type='_doc', id=game_str, body=baseball_dict)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 319, in index
+    _make_path(index, doc_type, id), params=params, body=body)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 186, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/connection/base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+elasticsearch.exceptions.TransportError: TransportError(429, 'cluster_block_exception', 'index [day_result] blocked by: [TOO_MANY_REQUESTS/12/index read-only / allow delete (api)];')
+PUT http://192.168.0.14:9222/day_result/_doc/20210606SKOB0 [status:429 request:0.001s]
+PUT http://192.168.0.14:9222/day_result/_doc/20210606SKOB0 [status:429 request:0.003s]
+Job "exec_cron (trigger: cron[hour='1', minute='40'], next run at: 2021-06-08 01:40:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 15, in exec_cron
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 1277, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 398, in dayResultCrawling
+    response = es_client.index(index='day_result', doc_type='_doc', id=game_str, body=baseball_dict)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 319, in index
+    _make_path(index, doc_type, id), params=params, body=body)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 186, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/connection/base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+elasticsearch.exceptions.TransportError: TransportError(429, 'cluster_block_exception', 'index [day_result] blocked by: [TOO_MANY_REQUESTS/12/index read-only / allow delete (api)];')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 17, in exec_cron
+    exists_result, exists_preview = runCrawler(today)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 1277, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/crawling/KBO_Day_Crawling.py", line 398, in dayResultCrawling
+    response = es_client.index(index='day_result', doc_type='_doc', id=game_str, body=baseball_dict)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 319, in index
+    _make_path(index, doc_type, id), params=params, body=body)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 186, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/elasticsearch/connection/base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+elasticsearch.exceptions.TransportError: TransportError(429, 'cluster_block_exception', 'index [day_result] blocked by: [TOO_MANY_REQUESTS/12/index read-only / allow delete (api)];')
+2021-06-09 18:30:16.661349: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:30:16.661469: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:30:16.661477: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 44, in <module>
+    scheduler.start()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/blocking.py", line 20, in start
+    super(BlockingScheduler, self).start(*args, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 167, in start
+    self._real_add_job(job, jobstore_alias, replace_existing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 872, in _real_add_job
+    store.add_job(job)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/jobstores/memory.py", line 41, in add_job
+    raise ConflictingIdError(job.id)
+apscheduler.jobstores.base.ConflictingIdError: 'Job identifier (kbo) conflicts with an existing job'
+2021-06-09 18:30:30.485556: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:30:30.485683: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:30:30.485692: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 44, in <module>
+    scheduler.start()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/blocking.py", line 20, in start
+    super(BlockingScheduler, self).start(*args, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 167, in start
+    self._real_add_job(job, jobstore_alias, replace_existing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 872, in _real_add_job
+    store.add_job(job)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/jobstores/memory.py", line 41, in add_job
+    raise ConflictingIdError(job.id)
+apscheduler.jobstores.base.ConflictingIdError: 'Job identifier (kbo) conflicts with an existing job'
+2021-06-09 18:31:02.053548: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:31:02.053667: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:31:02.053686: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 44, in <module>
+    scheduler.start()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/blocking.py", line 20, in start
+    super(BlockingScheduler, self).start(*args, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 167, in start
+    self._real_add_job(job, jobstore_alias, replace_existing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 872, in _real_add_job
+    store.add_job(job)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/jobstores/memory.py", line 41, in add_job
+    raise ConflictingIdError(job.id)
+apscheduler.jobstores.base.ConflictingIdError: 'Job identifier (kbo) conflicts with an existing job'
+2021-06-09 18:34:13.937633: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:34:13.937756: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:34:13.937766: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 44, in <module>
+    scheduler.start()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/blocking.py", line 20, in start
+    super(BlockingScheduler, self).start(*args, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 167, in start
+    self._real_add_job(job, jobstore_alias, replace_existing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 872, in _real_add_job
+    store.add_job(job)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/jobstores/memory.py", line 41, in add_job
+    raise ConflictingIdError(job.id)
+apscheduler.jobstores.base.ConflictingIdError: 'Job identifier (kbo) conflicts with an existing job'
+2021-06-09 18:34:31.047877: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:34:31.047994: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:34:31.048003: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 44, in <module>
+    scheduler.start()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/blocking.py", line 20, in start
+    super(BlockingScheduler, self).start(*args, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 167, in start
+    self._real_add_job(job, jobstore_alias, replace_existing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 872, in _real_add_job
+    store.add_job(job)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/jobstores/memory.py", line 41, in add_job
+    raise ConflictingIdError(job.id)
+apscheduler.jobstores.base.ConflictingIdError: 'Job identifier (kbo) conflicts with an existing job'
+2021-06-09 18:34:37.133707: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:34:37.133837: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:34:37.133847: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 44, in <module>
+    scheduler.start()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/blocking.py", line 20, in start
+    super(BlockingScheduler, self).start(*args, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 167, in start
+    self._real_add_job(job, jobstore_alias, replace_existing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 872, in _real_add_job
+    store.add_job(job)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/jobstores/memory.py", line 41, in add_job
+    raise ConflictingIdError(job.id)
+apscheduler.jobstores.base.ConflictingIdError: 'Job identifier (kbo) conflicts with an existing job'
+2021-06-09 18:35:14.291527: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:35:14.291644: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:35:14.291652: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 44, in <module>
+    scheduler.start()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/blocking.py", line 20, in start
+    super(BlockingScheduler, self).start(*args, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 167, in start
+    self._real_add_job(job, jobstore_alias, replace_existing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 872, in _real_add_job
+    store.add_job(job)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/jobstores/memory.py", line 41, in add_job
+    raise ConflictingIdError(job.id)
+apscheduler.jobstores.base.ConflictingIdError: 'Job identifier (kbo) conflicts with an existing job'
+2021-06-09 18:35:46.089759: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:35:46.089876: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:35:46.089885: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 44, in <module>
+    scheduler.start()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/blocking.py", line 20, in start
+    super(BlockingScheduler, self).start(*args, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 167, in start
+    self._real_add_job(job, jobstore_alias, replace_existing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/schedulers/base.py", line 872, in _real_add_job
+    store.add_job(job)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/jobstores/memory.py", line 41, in add_job
+    raise ConflictingIdError(job.id)
+apscheduler.jobstores.base.ConflictingIdError: 'Job identifier (kbo) conflicts with an existing job'
+2021-06-09 18:37:12.970567: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:37:12.970720: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-09 18:37:12.970730: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+Job "exec_pre_train (trigger: cron[hour='1', minute='10'], next run at: 2021-06-11 01:10:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 13, in exec_pre_train
+    pre_train(today)
+  File "/home/ash/deepsports/code/KBO_Prepare_Retraining.py", line 121, in pre_train
+    data = pd.read_csv('./deepsports/data/data_set.csv', index_col = 0)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 686, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 452, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 946, in __init__
+    self._make_engine(self.engine)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 1178, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 2008, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: './deepsports/data/data_set.csv'
+2021-06-10 01:20:00.009092: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 01:20:00.053716: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 01:20:00.054819: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 01:20:00.055152: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 01:20:00.055354: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 01:20:00.057761: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 01:20:00.058165: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 01:20:00.060710: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 01:20:00.062263: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 01:20:00.067846: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 01:20:00.067876: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 01:20:00.074941: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 01:20:00.097980: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 01:20:00.102709: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f95d07efb60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 01:20:00.102776: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 01:20:00.384198: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f95d0016570 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 01:20:00.384254: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 01:20:00.384262: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 01:20:00.384485: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 01:20:00.384495: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+Job "exec_train (trigger: cron[hour='1', minute='20'], next run at: 2021-06-11 01:20:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 16, in exec_train
+    model_train(30)
+  File "/home/ash/deepsports/code/KBO_Retraining.py", line 127, in model_train
+    data = pd.read_csv('./deepsports/data/kbo_data_prepared_maxabs.csv') # 전처리 & 정규화 된 데이터
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 686, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 452, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 946, in __init__
+    self._make_engine(self.engine)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 1178, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 2008, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: './deepsports/data/kbo_data_prepared_maxabs.csv'
+Job "exec_predict (trigger: cron[hour='6', minute='30'], next run at: 2021-06-11 06:30:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 30, in exec_predict
+    dnn_pre_predict(today)      # DNN
+  File "/home/ash/deepsports/code/KBO_DNN_Pre_Predict.py", line 61, in dnn_pre_predict
+    daily_data.to_csv('./deepsports/data/data_result.csv')
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/core/generic.py", line 3170, in to_csv
+    formatter.save()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/formats/csvs.py", line 190, in save
+    compression=dict(self.compression_args, method=self.compression),
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/common.py", line 493, in get_handle
+    f = open(path_or_buf, mode, encoding=encoding, errors=errors, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: './deepsports/data/data_result.csv'
+Job "exec_predict (trigger: cron[hour='7', minute='0'], next run at: 2021-06-11 07:00:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 30, in exec_predict
+    dnn_pre_predict(today)      # DNN
+  File "/home/ash/deepsports/code/KBO_DNN_Pre_Predict.py", line 61, in dnn_pre_predict
+    daily_data.to_csv('./deepsports/data/data_result.csv')
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/core/generic.py", line 3170, in to_csv
+    formatter.save()
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/formats/csvs.py", line 190, in save
+    compression=dict(self.compression_args, method=self.compression),
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/common.py", line 493, in get_handle
+    f = open(path_or_buf, mode, encoding=encoding, errors=errors, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: './deepsports/data/data_result.csv'
+2021-06-10 09:28:17.131582: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 09:28:17.131710: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 09:28:17.131720: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 09:30:00.712142: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 09:30:00.712253: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 09:30:00.712262: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 09:35:00.004118: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 09:35:00.044854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 09:35:00.045942: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 09:35:00.046264: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 09:35:00.046463: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 09:35:00.049029: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 09:35:00.049411: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 09:35:00.051952: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 09:35:00.053533: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 09:35:00.059203: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 09:35:00.059237: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 09:35:00.065553: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 09:35:00.077896: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 09:35:00.083085: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f4e5c7e0650 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 09:35:00.083162: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 09:35:00.346577: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f4e5c8465e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 09:35:00.346693: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 09:35:00.346719: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 09:35:00.347223: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 09:35:00.347270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+Job "exec_train (trigger: cron[hour='9', minute='35'], next run at: 2021-06-11 09:35:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 16, in exec_train
+    model_train(30)
+  File "/home/ash/deepsports/code/KBO_Retraining.py", line 127, in model_train
+    data = pd.read_csv('./kbo_data_prepared_maxabs.csv') # 전처리 & 정규화 된 데이터
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 686, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 452, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 946, in __init__
+    self._make_engine(self.engine)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 1178, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/pandas/io/parsers.py", line 2008, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: './kbo_data_prepared_maxabs.csv'
+2021-06-10 10:17:15.587596: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 10:17:15.587725: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 10:17:15.587734: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 10:25:00.012170: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 10:25:00.058362: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 10:25:00.059423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 10:25:00.059732: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 10:25:00.059929: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 10:25:00.062297: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 10:25:00.062774: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 10:25:00.064913: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 10:25:00.065799: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 10:25:00.069926: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 10:25:00.069963: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 10:25:00.077645: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 10:25:00.091092: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 10:25:00.093882: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7ffb3cfd7cb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 10:25:00.093961: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 10:25:00.374929: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7ffb3d1d1520 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 10:25:00.375036: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 10:25:00.375064: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 10:25:00.375460: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 10:25:00.375499: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+Job "exec_train (trigger: cron[hour='10', minute='25'], next run at: 2021-06-11 10:25:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 16, in exec_train
+    model_train(1)
+  File "/home/ash/deepsports/code/KBO_Retraining.py", line 172, in model_train
+    for i in range(num):
+NameError: name 'num' is not defined
+2021-06-10 10:28:04.820272: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 10:28:04.820402: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 10:28:04.820413: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 10:32:00.017353: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 10:32:00.058322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 10:32:00.059298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 10:32:00.059602: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 10:32:00.059785: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 10:32:00.062073: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 10:32:00.062523: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 10:32:00.065057: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 10:32:00.066509: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 10:32:00.071231: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 10:32:00.071269: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 10:32:00.085044: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 10:32:00.102709: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 10:32:00.105283: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fed98066ad0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 10:32:00.105317: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 10:32:00.361458: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7fed98ebf940 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 10:32:00.361508: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 10:32:00.361516: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 10:32:00.361720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 10:32:00.361735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+Job "exec_train (trigger: cron[hour='10', minute='32'], next run at: 2021-06-11 10:32:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 16, in exec_train
+    model_train(1)
+  File "/home/ash/deepsports/code/KBO_Retraining.py", line 173, in model_train
+    train_model, history, predictions, train_X = modelTrainning(Nin, Nh_l, Nout, d_out, split_ratio, batch_size)
+  File "/home/ash/deepsports/code/KBO_Retraining.py", line 85, in modelTrainning
+    train_X, val_x, train_Y, val_y = train_test_split(train_x, train_y, test_size=t_size, shuffle=True,
+NameError: name 'train_x' is not defined
+Job "exec_predict (trigger: cron[hour='10', minute='40'], next run at: 2021-06-11 10:40:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 31, in exec_predict
+    dnn_predict(today)          # DNN 학습/테스트
+  File "/home/ash/deepsports/code/KBO_DNN_Predict.py", line 23, in dnn_predict
+    model = models.load_model('./model_kbo.h5')
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/saving/save.py", line 149, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/saved_model/loader_impl.py", line 83, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ./model_kbo.h5/{saved_model.pbtxt|saved_model.pb}
+Job "exec_predict (trigger: cron[hour='10', minute='45'], next run at: 2021-06-11 10:45:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 31, in exec_predict
+    dnn_predict(today)          # DNN 학습/테스트
+  File "/home/ash/deepsports/code/KBO_DNN_Predict.py", line 23, in dnn_predict
+    model = models.load_model('./model_kbo.h5')
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/saving/save.py", line 149, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/saved_model/loader_impl.py", line 83, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ./model_kbo.h5/{saved_model.pbtxt|saved_model.pb}
+2021-06-10 12:27:52.980666: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 12:27:52.980780: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 12:27:52.980789: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 12:27:54.093301: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 12:27:54.134286: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 12:27:54.135268: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 12:27:54.135548: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 12:27:54.135720: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 12:27:54.138426: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 12:27:54.138860: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 12:27:54.141767: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 12:27:54.143005: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 12:27:54.148033: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 12:27:54.148063: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 12:27:54.153935: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 12:27:54.164899: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 12:27:54.170060: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b9dab125a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 12:27:54.170124: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 12:27:54.453443: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b9daaf45e0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 12:27:54.453522: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 12:27:54.453546: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 12:27:54.453993: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 12:27:54.454030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+Job "exec_predict (trigger: cron[hour='13', minute='10'], next run at: 2021-06-11 13:10:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 123, in exec_predict
+    dnn_predict(today)          # DNN 학습/테스트
+  File "/home/ash/deepsports/code/KBO_DNN_Predict.py", line 26, in dnn_predict
+    predict = model.predict(prepared_data)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py", line 1013, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 498, in predict
+    workers=workers, use_multiprocessing=use_multiprocessing, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 426, in _model_iteration
+    use_multiprocessing=use_multiprocessing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 646, in _process_inputs
+    x, y, sample_weight=sample_weights)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py", line 2383, in _standardize_user_data
+    batch_size=batch_size)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py", line 2410, in _standardize_tensors
+    exception_prefix='input')
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_utils.py", line 582, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected Hidden-0_input to have shape (718,) but got array with shape (717,)
+Job "exec_predict (trigger: cron[hour='13', minute='20'], next run at: 2021-06-11 13:20:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 123, in exec_predict
+    dnn_predict(today)          # DNN 학습/테스트
+  File "/home/ash/deepsports/code/KBO_DNN_Predict.py", line 26, in dnn_predict
+    predict = model.predict(prepared_data)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py", line 1013, in predict
+    use_multiprocessing=use_multiprocessing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 498, in predict
+    workers=workers, use_multiprocessing=use_multiprocessing, **kwargs)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 426, in _model_iteration
+    use_multiprocessing=use_multiprocessing)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_v2.py", line 646, in _process_inputs
+    x, y, sample_weight=sample_weights)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py", line 2383, in _standardize_user_data
+    batch_size=batch_size)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training.py", line 2410, in _standardize_tensors
+    exception_prefix='input')
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/tensorflow_core/python/keras/engine/training_utils.py", line 582, in standardize_input_data
+    str(data_shape))
+ValueError: Error when checking input: expected Hidden-0_input to have shape (718,) but got array with shape (717,)
+2021-06-10 14:57:01.599718: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 14:57:01.599845: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 14:57:01.599856: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 14:57:02.736145: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 14:57:02.777557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 14:57:02.778435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 14:57:02.778699: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 14:57:02.778854: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 14:57:02.781389: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 14:57:02.781794: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 14:57:02.784522: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 14:57:02.786063: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 14:57:02.790906: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 14:57:02.790931: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 14:57:02.796580: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 14:57:02.817274: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 14:57:02.821884: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56148e8a0930 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 14:57:02.821946: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 14:57:03.096323: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56148e882230 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 14:57:03.096408: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 14:57:03.096431: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 14:57:03.096849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 14:57:03.096882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+Job "exec_predict (trigger: cron[hour='15', minute='30'], next run at: 2021-06-11 15:30:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 114, in exec_predict
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1278, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 168, in dayResultCrawling
+    ex_df = pd.read_csv(csv_name, engine='python')
+NameError: name 'csv_name' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 116, in exec_predict
+    exists_result, exists_preview = runCrawler(today)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1278, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 168, in dayResultCrawling
+    ex_df = pd.read_csv(csv_name, engine='python')
+NameError: name 'csv_name' is not defined
+2021-06-10 15:32:39.160077: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:32:39.160190: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:32:39.160199: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 15:32:40.273586: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 15:32:40.314351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 15:32:40.315323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 15:32:40.315617: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 15:32:40.315785: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:32:40.318258: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 15:32:40.318681: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 15:32:40.321646: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 15:32:40.322982: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 15:32:40.327924: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 15:32:40.327951: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 15:32:40.333962: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 15:32:40.344985: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 15:32:40.350220: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56446fded120 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 15:32:40.350283: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 15:32:40.604069: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56446fd2d570 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 15:32:40.604147: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 15:32:40.604168: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 15:32:40.604613: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 15:32:40.604647: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+Job "exec_predict (trigger: cron[hour='15', minute='35'], next run at: 2021-06-11 15:35:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 114, in exec_predict
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1271, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 161, in dayResultCrawling
+    ex_df = pd.read_csv(csv_name, engine='python')
+NameError: name 'csv_name' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 116, in exec_predict
+    exists_result, exists_preview = runCrawler(today)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1271, in runCrawler
+    exists_result = dayResultCrawling(yesterday_year, yesterday_month, yesterday_day)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 161, in dayResultCrawling
+    ex_df = pd.read_csv(csv_name, engine='python')
+NameError: name 'csv_name' is not defined
+Job "exec_predict (trigger: cron[hour='15', minute='40'], next run at: 2021-06-11 15:40:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 114, in exec_predict
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1271, in runCrawler
+    # 직전 경기 결과 / 당일 경기 라인업
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 161, in dayResultCrawling
+    time.sleep(2)
+NameError: name 'csv_name' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 116, in exec_predict
+    exists_result, exists_preview = runCrawler(today)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1271, in runCrawler
+    # 직전 경기 결과 / 당일 경기 라인업
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 161, in dayResultCrawling
+    time.sleep(2)
+NameError: name 'csv_name' is not defined
+2021-06-10 15:41:05.844420: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:41:05.844529: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:41:05.844537: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 15:41:06.965437: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 15:41:06.998480: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 15:41:06.999132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 15:41:06.999343: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 15:41:06.999467: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:41:07.001291: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 15:41:07.001602: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 15:41:07.003547: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 15:41:07.004649: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 15:41:07.008886: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 15:41:07.008913: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 15:41:07.014563: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 15:41:07.025286: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 15:41:07.027961: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e677bb4c60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 15:41:07.027984: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 15:41:07.261532: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e677b95b10 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 15:41:07.261608: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 15:41:07.261630: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 15:41:07.262080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 15:41:07.262113: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+2021-06-10 15:41:38.652507: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:41:38.652616: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:41:38.652625: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 15:41:39.759404: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 15:41:39.801261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 15:41:39.802291: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 15:41:39.802576: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 15:41:39.802775: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 15:41:39.805164: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 15:41:39.805489: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 15:41:39.807636: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 15:41:39.808876: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 15:41:39.813696: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 15:41:39.813721: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 15:41:39.819110: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 15:41:39.829853: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 15:41:39.834710: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5565d78059c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 15:41:39.834774: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 15:41:40.092825: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5565d77dea10 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 15:41:40.092863: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 15:41:40.092870: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 15:41:40.093114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 15:41:40.093124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+2021-06-10 16:00:11.265714: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 16:00:11.265842: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 16:00:11.265851: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-10 16:00:12.441067: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-10 16:00:12.482521: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 16:00:12.483584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-10 16:00:12.483928: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-10 16:00:12.484124: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-10 16:00:12.486995: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-10 16:00:12.487474: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-10 16:00:12.490135: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-10 16:00:12.491458: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-10 16:00:12.496787: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-10 16:00:12.496816: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-10 16:00:12.502854: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-10 16:00:12.514096: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-10 16:00:12.519189: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555db6d926d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-10 16:00:12.519253: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-10 16:00:12.789256: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555db6d89e70 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-10 16:00:12.789336: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 16:00:12.789357: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-10 16:00:12.789770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-10 16:00:12.789804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+Job "exec_predict (trigger: cron[hour='3', minute='30'], next run at: 2021-06-12 03:30:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 114, in exec_predict
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1264, in runCrawler
+    yesterday_day = str(yesterday.day)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 159, in dayResultCrawling
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=89.0.4389.72)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 116, in exec_predict
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1264, in runCrawler
+    yesterday_day = str(yesterday.day)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 159, in dayResultCrawling
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=89.0.4389.72)
+
+Job "exec_predict (trigger: cron[hour='3', minute='50'], next run at: 2021-06-12 03:50:00 KST)" raised an exception
+Traceback (most recent call last):
+  File "kbo_cron_app.py", line 114, in exec_predict
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1264, in runCrawler
+    yesterday_day = str(yesterday.day)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 159, in dayResultCrawling
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=89.0.4389.72)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "kbo_cron_app.py", line 116, in exec_predict
+    exists_result, exists_preview = runCrawler(today)       # KBO 데이터 크롤링
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 1264, in runCrawler
+    yesterday_day = str(yesterday.day)
+  File "/home/ash/deepsports/code/KBO_Day_Crawling.py", line 159, in dayResultCrawling
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/ash/anaconda3/envs/deepsports/lib/python3.6/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: chrome not reachable
+  (Session info: headless chrome=89.0.4389.72)
+
+2021-06-11 11:50:12.936610: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 11:50:12.936715: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 11:50:12.936724: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-11 11:50:14.058554: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-11 11:50:14.096753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-11 11:50:14.097859: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-11 11:50:14.098166: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-11 11:50:14.098350: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 11:50:14.100392: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-11 11:50:14.100742: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-11 11:50:14.103079: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-11 11:50:14.104384: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-11 11:50:14.109404: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-11 11:50:14.109427: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-11 11:50:14.114687: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-11 11:50:14.125818: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-11 11:50:14.130737: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55a1e76802a0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-11 11:50:14.130800: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-11 11:50:14.388244: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55a1e767e4a0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-11 11:50:14.388342: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-11 11:50:14.388366: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-11 11:50:14.388788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-11 11:50:14.388821: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+2021-06-11 12:38:46.848913: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 12:38:46.849020: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 12:38:46.849028: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-11 12:38:47.982091: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-11 12:38:48.022163: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-11 12:38:48.023098: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-11 12:38:48.023359: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-11 12:38:48.023521: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 12:38:48.025839: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-11 12:38:48.026239: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-11 12:38:48.028930: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-11 12:38:48.030508: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-11 12:38:48.034955: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-11 12:38:48.034981: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-11 12:38:48.041013: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-11 12:38:48.052598: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-11 12:38:48.055319: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b8b34637c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-11 12:38:48.055345: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-11 12:38:48.308513: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55b8b3443710 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-11 12:38:48.308550: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-11 12:38:48.308557: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-11 12:38:48.308780: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-11 12:38:48.308789: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
+2021-06-11 13:23:26.754973: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 13:23:26.755090: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 13:23:26.755099: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2021-06-11 13:23:27.869525: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-06-11 13:23:27.909872: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties: 
+pciBusID: 0000:18:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-11 13:23:27.910923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 1 with properties: 
+pciBusID: 0000:af:00.0 name: GeForce RTX 2080 Ti computeCapability: 7.5
+coreClock: 1.545GHz coreCount: 68 deviceMemorySize: 10.76GiB deviceMemoryBandwidth: 573.69GiB/s
+2021-06-11 13:23:27.911219: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-06-11 13:23:27.911398: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcublas.so.10'; dlerror: libcublas.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda-10.1/lib64:/usr/local/cuda-10.1/extras/CUPTI/lib64:/usr/local/cuda-10.1/targets/x86_64-linux/lib:
+2021-06-11 13:23:27.913935: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-06-11 13:23:27.914378: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-06-11 13:23:27.916599: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-06-11 13:23:27.917846: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-06-11 13:23:27.922712: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-06-11 13:23:27.922751: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1592] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-06-11 13:23:27.928588: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-06-11 13:23:27.939446: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2200000000 Hz
+2021-06-11 13:23:27.944331: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5591eef9bb70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-06-11 13:23:27.944394: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-06-11 13:23:28.188646: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5591eef93870 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-06-11 13:23:28.188723: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-11 13:23:28.188747: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-06-11 13:23:28.189211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-06-11 13:23:28.189250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      
